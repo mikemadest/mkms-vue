@@ -58,6 +58,10 @@ a:hover {
   color: #deb332;
 }
 
+footer a:hover {
+  color: #fff;
+}
+
 h4,
 h3,
 h2,
@@ -120,6 +124,11 @@ h4 svg {
 .highlight-features a {
   color: #ecb231;
   text-decoration: none;
+}
+
+.highlight-features a,
+.highlight-features span {
+  margin-right: 0.5rem;
 }
 
 .highlight-features a:hover {

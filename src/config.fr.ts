@@ -10,7 +10,6 @@ import expoJSImage from './assets/recentwork/expojs-dashboard.jpg'
 import hmhcoImage from './assets/recentwork/hmhco-solution.jpg'
 import flakinessArticleImage from './assets/articles/medium-article-flakiness3.jpg'
 import linkedomArticleImage from './assets/articles/medium-article-linkedom3.jpg'
-// import { faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
 import type { ArticleType, MenuType, SkillsType, ConfigType } from './AllTypes'
 
 const menu: MenuType = [
@@ -42,7 +41,7 @@ const mediumArticles: Array<ArticleType> = [
     href: 'https://medium.com/hmh-engineering/the-4-stages-of-flakiness-part-1-3-denial-anger-depression-and-acceptance-43b2496cab22',
     linkA11y: "Voir l'article Medium sur la stabilité des tests unitaires (anglais seulement)",
     linkLabel: "Voir l'article en anglais",
-    tags: '#Jest #ReactJS #Jenkins #NodeJS #ReactTestingLibrary',
+    tags: '#Jest #React #Jenkins #NodeJS #ReactTestingLibrary',
     points:
       "Création d'une documentation en support des développeurs|Raporteur d'erreur personalisé pour Jest|Exécuter uniquement les tests en échec avec Jenkins",
     image: flakinessArticleImage,
@@ -74,7 +73,7 @@ const recentWorks: Array<ArticleType> = [
     href: 'https://www.hmhco.com/',
     linkA11y: 'Voir le site HMH',
     linkLabel: 'HMH solutions',
-    tags: '#ReactJs #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
+    tags: '#React #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
     points:
       "Migration d'applications angular 1.x vers React|Auteur de nombreuses applications et composants sur le mono repo|Revue de code|Amélioration de la stabilité des tests unitaires sur le pipeline Jenkins|Respect des règles d'accessibilité des contenus Web WCAG 2.1 AA",
     image: hmhcoImage,
@@ -85,7 +84,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'ExpoJS',
     description:
       'ExpoJS est un générateur de documentation et une interface pour chercher et consulter les informations sur les packages.',
-    tags: '#ReactJs #ES6 #Concourse #NodeJS #MaterialUI',
+    tags: '#React #ES6 #Concourse #NodeJS #MaterialUI',
     points:
       "Sources Javascript lues avec Babel Parser|Analyse de plus de 150 packages en moins de 7 secondes|Affiche une documentation des packages| Liens avec Github vers les sources et commits|Suggestions pour l'amélioration des Packages|Projet Hackathon",
     image: expoJSImage,

@@ -42,7 +42,7 @@ const mediumArticles: Array<ArticleType> = [
     imageAlt:
       'Illustration for Medium article on unit tests flakiness showing a giant hand grabbing a bridge',
     linkLabel: 'View article',
-    tags: '#Jest #ReactJS #Jenkins #NodeJS #ReactTestingLibrary',
+    tags: '#Jest #React #Jenkins #NodeJS #ReactTestingLibrary',
     points:
       'created documentation to help developers|Created a custom Jest reporter|Jenkins script to rerun failed tests',
     image: flakinessArticleImage
@@ -70,9 +70,9 @@ const recentWorks: Array<ArticleType> = [
     href: 'https://www.hmhco.com/',
     imageAlt: 'Image showing HMH website structure',
     linkLabel: 'HMH solutions',
-    tags: '#ReactJs #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
+    tags: '#React #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
     points:
-      'Migrated angular 1.x applications to React|Created ReactJS applications and components in monorepo|Active code reviewer|Proposed and develop solutions for improving tests stability|Ensured compliance with accessibility requirements (WCAG 2.1 AA)',
+      'Migrated angular 1.x applications to React|Created React applications and components in monorepo|Active code reviewer|Proposed and develop solutions for improving tests stability|Ensured compliance with accessibility requirements (WCAG 2.1 AA)',
     image: hmhcoImage
   },
 
@@ -80,7 +80,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'ExpoJS',
     description:
       'ExpoJS is a docs generator and UI. It shows exported content like constants and functions and present packages in a searchable interface.',
-    tags: '#ReactJs #ES6 #Concourse #NodeJS #MaterialUI',
+    tags: '#React #ES6 #Concourse #NodeJS #MaterialUI',
     imageAlt: 'screenshot of the ExpoJS dashboard, showing package cards, navigation and search',
     points:
       'Use Babel parser to analyse JS content|take 7 seconds to scans more than 150 packages|Build documentation|Link to github sources and commits|Suggestions for Package improvements|Hackathon project',

@@ -1,30 +1,28 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useIntl } from 'vue-intl'
-import { Waypoint } from 'vue-waypoint'
+import { Waypoint, type WaypointState } from 'vue-waypoint'
 import getContents from '../config'
 
 // const conversion = chunks => (<strong>{chunks}</strong>);
 const { locale } = useIntl()
 const { skills } = getContents(locale)
 const isScrolled = ref(false)
-const asideClassName = isScrolled ? 'scrolled' : ''
+const asideClassName = ref('')
 
-function onChange(waypointState) {
-  console.log(waypointState)
-
-  console.log(waypointState.going)
+function onChange(waypointState: WaypointState) {
   if (waypointState.going === 'IN') {
     isScrolled.value = true
   } else {
     isScrolled.value = false
   }
+  asideClassName.value = isScrolled.value ? 'scrolled' : ''
 }
 </script>
 
 <template>
   <section id="about">
-    <p className="about-content">
+    <p class="about-content">
       {{
         $formatMessage(
           { id: 'mkms.nav.about.content' },

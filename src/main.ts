@@ -1,4 +1,5 @@
 import './assets/main.css'
+import './assets/media-queries.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
@@ -12,18 +13,18 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-// import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import {
   faAddressCard,
   faLaptopCode,
   faLanguage,
-  faSquare
+  faSquare,
+  faCheck
 } from '@fortawesome/free-solid-svg-icons'
 import getTranslations from './lang'
 
 /* add icons to the library */
 // library.add(faLinkedin)
-library.add(faLinkedin, faAddressCard, faLaptopCode, faLanguage, faSquare)
+library.add(faLinkedin, faAddressCard, faLaptopCode, faLanguage, faSquare, faCheck)
 
 const languageChoice = window.location.href.includes('/fr') ? 'fr' : 'en'
 

@@ -1,6 +1,6 @@
 <template>
   <section id="big-banner">
-    <div className="banner-content">
+    <div class="banner-content">
       <div>
         <h1>
           {{ $formatMessage({ id: 'mkms.bigbanner.title' }) }}

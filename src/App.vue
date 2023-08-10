@@ -4,14 +4,19 @@ import Footer from './components/Footer.vue'
 import PageHeader from './components/PageHeader.vue'
 import MainBanner from './components/MainBanner.vue'
 import About from './components/About.vue'
+import Section from './components/Section.vue'
 
 const { mediumArticles, recentWorks, olderWorks } = getContent('en')
-console.log('mediumArticles = ', mediumArticles)
 </script>
 
 <template>
   <PageHeader />
   <MainBanner />
   <About />
+
+  <Section id="medium-articles" :items="mediumArticles" titleId="mkms.nav.mediumArticles" />
+  <Section id="recent-work" :items="recentWorks" titleId="mkms.nav.recentwork" />
+  <Section id="older-work" :items="olderWorks" titleId="mkms.section.moreProjects" isSmall />
+
   <Footer />
 </template>

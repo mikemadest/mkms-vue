@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useIntl } from 'vue-intl'
 import getContents from '../config'
 import LanguageSelector from './LanguageSelector.vue'
@@ -11,15 +11,12 @@ const isScrolled = ref(false)
 const headerClassName = ref('notscrolled')
 
 const onScroll = async () => {
-  console.log('window.scrollY = ', window.scrollY)
   if (window.scrollY > 40) {
     isScrolled.value = true
   } else {
     isScrolled.value = false
   }
-  // await nextTick()
   headerClassName.value = isScrolled.value ? 'scrolled' : 'notscrolled'
-  console.log('isScrolled.value = ', isScrolled.value)
 }
 
 onMounted(() => {
@@ -29,9 +26,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
 })
-
-// const headerClassName = isScrolled.value ? 'scrolled' : 'notscrolled'
-console.log('headerClassName = ', headerClassName)
 </script>
 
 <template>
@@ -47,7 +41,7 @@ console.log('headerClassName = ', headerClassName)
           >
         </li>
 
-        <li className="menu-item">
+        <li class="menu-item">
           <a
             href="https://www.linkedin.com/in/mickael-meausoone-webdeveloper/?locale=en_US"
             target="_blank"
