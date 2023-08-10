@@ -120,6 +120,11 @@ h4 svg {
   transition-delay: 250ms;
 }
 
+.highlight-features {
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+
 .highlight-features,
 .highlight-features a {
   color: #ecb231;
@@ -128,7 +133,7 @@ h4 svg {
 
 .highlight-features a,
 .highlight-features span {
-  margin-right: 0.5rem;
+  margin-right: 0.6rem;
 }
 
 .highlight-features a:hover {
@@ -226,8 +231,6 @@ nav li a {
   font-size: 1.3rem;
 }
 
-nav .menu-item {
-}
 nav .menu-item svg {
   margin-right: 5px;
 }

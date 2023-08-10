@@ -4,7 +4,6 @@ import { useIntl } from 'vue-intl'
 import { Waypoint, type WaypointState } from 'vue-waypoint'
 import getContents from '../config'
 
-// const conversion = chunks => (<strong>{chunks}</strong>);
 const { locale } = useIntl()
 const { skills } = getContents(locale)
 const isScrolled = ref(false)

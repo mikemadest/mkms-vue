@@ -10,7 +10,7 @@ const { menu } = getContents(locale)
 const isScrolled = ref(false)
 const headerClassName = ref('notscrolled')
 
-const onScroll = async () => {
+const onScroll = () => {
   if (window.scrollY > 40) {
     isScrolled.value = true
   } else {
