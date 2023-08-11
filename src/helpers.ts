@@ -1,5 +1,5 @@
 interface StringMap {
-  [key: string]: string
+  [key: string]: string;
 }
 
 export const tagsLinks: StringMap = {
@@ -23,6 +23,6 @@ export const tagsLinks: StringMap = {
   '#Phaser3': 'https://github.com/photonstorm/phaser',
   '#Git': 'https://github.com/mikemadest',
   '#Blender': 'https://www.blender.org/'
-}
+};
 
-export default tagsLinks
+export default tagsLinks;

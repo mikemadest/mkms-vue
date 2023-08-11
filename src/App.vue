@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useIntl } from 'vue-intl'
-import getContent from './config'
-import Footer from './components/Footer.vue'
-import PageHeader from './components/PageHeader.vue'
-import MainBanner from './components/MainBanner.vue'
-import About from './components/About.vue'
-import Section from './components/Section.vue'
+import { useIntl } from 'vue-intl';
+import getContent from './config';
+import Footer from './components/Footer.vue';
+import PageHeader from './components/PageHeader.vue';
+import MainBanner from './components/MainBanner.vue';
+import About from './components/About.vue';
+import Section from './components/Section.vue';
 
-const { locale } = useIntl()
-const { mediumArticles, recentWorks, olderWorks } = getContent(locale)
+const { locale } = useIntl();
+const { mediumArticles, recentWorks, olderWorks } = getContent(locale);
 </script>
 
 <template>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Article from './Article.vue'
+import Article from './Article.vue';
 
-const { isSmall } = defineProps(['items', 'titleId', 'id', 'isSmall'])
-const itemClassName = isSmall ? 'small-row' : 'normal-row'
+const { isSmall } = defineProps(['items', 'titleId', 'id', 'isSmall']);
+const itemClassName = isSmall ? 'small-row' : 'normal-row';
 </script>
 
 <template>

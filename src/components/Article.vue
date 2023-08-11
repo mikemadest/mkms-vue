@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { Waypoint, type WaypointState } from 'vue-waypoint'
-import tagsLinks from '../helpers'
+import { ref } from 'vue';
+import { Waypoint, type WaypointState } from 'vue-waypoint';
+import tagsLinks from '../helpers';
 
 const { points, isSmall, image, tags } = defineProps([
   'title',
@@ -13,23 +13,20 @@ const { points, isSmall, image, tags } = defineProps([
   'points',
   'buttonLabel',
   'isSmall'
-])
+]);
 
-const isScrolled = ref(false)
-const asideClassName = ref('')
-
-const styles = isSmall ? { backgroundImage: `url(${image})` } : {}
-const pointsList = points?.split('|') || null
-const tagList = tags.split(' ')
+// seems necessary to make the class name reactive, otherwise it's not updating
+const isScrolled = ref(false);
+const asideClassName = ref('');
 
 function onChange(waypointState: WaypointState) {
-  if (waypointState.going === 'IN') {
-    isScrolled.value = true
-  } else {
-    isScrolled.value = false
-  }
-  asideClassName.value = isScrolled.value ? 'scrolled' : ''
+  isScrolled.value = waypointState.going === 'IN';
+  asideClassName.value = isScrolled.value ? 'scrolled' : '';
 }
+
+const styles = isSmall ? { backgroundImage: `url(${image})` } : {};
+const pointsList = points?.split('|') || null;
+const tagList = tags.split(' ');
 </script>
 
 <template>

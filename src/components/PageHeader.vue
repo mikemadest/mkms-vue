@@ -1,31 +1,28 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { useIntl } from 'vue-intl'
-import getContents from '../config'
-import LanguageSelector from './LanguageSelector.vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useIntl } from 'vue-intl';
+import getContents from '../config';
+import LanguageSelector from './LanguageSelector.vue';
 
-const { locale } = useIntl()
-const { menu } = getContents(locale)
+const { locale } = useIntl();
+const { menu } = getContents(locale);
 
-const isScrolled = ref(false)
-const headerClassName = ref('notscrolled')
+// class name reactive otherwise it's not updating
+const isScrolled = ref(false);
+const headerClassName = ref('notscrolled');
 
 const onScroll = () => {
-  if (window.scrollY > 40) {
-    isScrolled.value = true
-  } else {
-    isScrolled.value = false
-  }
-  headerClassName.value = isScrolled.value ? 'scrolled' : 'notscrolled'
-}
+  isScrolled.value = window.scrollY > 40;
+  headerClassName.value = isScrolled.value ? 'scrolled' : 'notscrolled';
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', onScroll, { passive: true })
-})
+  window.addEventListener('scroll', onScroll, { passive: true });
+});
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', onScroll)
-})
+  window.removeEventListener('scroll', onScroll);
+});
 </script>
 
 <template>

@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useIntl } from 'vue-intl'
-import { Waypoint, type WaypointState } from 'vue-waypoint'
-import getContents from '../config'
+import { ref } from 'vue';
+import { useIntl } from 'vue-intl';
+import { Waypoint, type WaypointState } from 'vue-waypoint';
+import getContents from '../config';
 
-const { locale } = useIntl()
-const { skills } = getContents(locale)
-const isScrolled = ref(false)
-const asideClassName = ref('')
+const { locale } = useIntl();
+const { skills } = getContents(locale);
+const isScrolled = ref(false);
+const asideClassName = ref('');
 
 function onChange(waypointState: WaypointState) {
   if (waypointState.going === 'IN') {
-    isScrolled.value = true
+    isScrolled.value = true;
   } else {
-    isScrolled.value = false
+    isScrolled.value = false;
   }
-  asideClassName.value = isScrolled.value ? 'scrolled' : ''
+  asideClassName.value = isScrolled.value ? 'scrolled' : '';
 }
 </script>
 

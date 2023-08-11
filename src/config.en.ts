@@ -1,16 +1,16 @@
-import workConfiguratorImage from './assets/recentwork/configurateur-demo-3.gif'
-import workPlayerImage from './assets/recentwork/player-demo5.gif'
-import immodeskImage from './assets/olderworks/immodesk-dashboard.jpg'
-import witchImage from './assets/olderworks/witch-journey-demo.jpg'
-import githubImage from './assets/olderworks/github.jpg'
-import codewarsImage from './assets/olderworks/codewars.jpg'
-import blenderImage from './assets/olderworks/blender-tryout-small.jpg'
-import lilibricoleImage from './assets/olderworks/lilibricole-small.jpg'
-import expoJSImage from './assets/recentwork/expojs-dashboard.jpg'
-import hmhcoImage from './assets/recentwork/hmhco-solution.jpg'
-import flakinessArticleImage from './assets/articles/medium-article-flakiness3.jpg'
-import linkedomArticleImage from './assets/articles/medium-article-linkedom3.jpg'
-import type { ArticleType, MenuType, SkillsType, ConfigType } from './AllTypes'
+import workConfiguratorImage from './assets/recentwork/configurateur-demo-3.gif';
+import workPlayerImage from './assets/recentwork/player-demo5.gif';
+import immodeskImage from './assets/olderworks/immodesk-dashboard.jpg';
+import witchImage from './assets/olderworks/witch-journey-demo.jpg';
+import githubImage from './assets/olderworks/github.jpg';
+import codewarsImage from './assets/olderworks/codewars.jpg';
+import blenderImage from './assets/olderworks/blender-tryout-small.jpg';
+import lilibricoleImage from './assets/olderworks/lilibricole-small.jpg';
+import expoJSImage from './assets/recentwork/expojs-dashboard.jpg';
+import hmhcoImage from './assets/recentwork/hmhco-solution.jpg';
+import flakinessArticleImage from './assets/articles/medium-article-flakiness3.jpg';
+import linkedomArticleImage from './assets/articles/medium-article-linkedom3.jpg';
+import type { ArticleType, MenuType, SkillsType, ConfigType } from './AllTypes';
 
 const menu: MenuType = [
   {
@@ -23,7 +23,7 @@ const menu: MenuType = [
     label: 'Recent work',
     icon: 'fa-laptop-code'
   }
-]
+];
 
 const skills: SkillsType = [
   ['Front-end', 'JavaScript (ES6), React, HTML / HTML5, CSS (flex, grid, SASS, less), WebGL'],
@@ -31,7 +31,7 @@ const skills: SkillsType = [
   ['Testing Frameworks', 'React Testing Library, Jest, MSW, Codecept, Selenium'],
   ['Build Tools / CI / CD', 'Webpack, Jenkins, Concourse, Docker'],
   ['Team player', 'Team Collaboration, Mentoring, Code Reviews']
-]
+];
 
 const mediumArticles: Array<ArticleType> = [
   {
@@ -61,7 +61,7 @@ const mediumArticles: Array<ArticleType> = [
       'setting realistic goals for a spike|investigating complex issues|making pull request for LinkeDOM and NodeJS',
     image: linkedomArticleImage
   }
-]
+];
 
 const recentWorks: Array<ArticleType> = [
   {
@@ -109,7 +109,7 @@ const recentWorks: Array<ArticleType> = [
     imageAlt:
       'animated gif showing a building surrounded by snow rotating and user hovering accomodations active zones, revealing details on them'
   }
-]
+];
 
 const olderWorks: Array<ArticleType> = [
   {
@@ -176,6 +176,6 @@ const olderWorks: Array<ArticleType> = [
     image: lilibricoleImage,
     imageAlt: 'screenshot of a "do it yourself" training website from my old porfolio of projects'
   }
-]
+];
 
-export default { menu, skills, mediumArticles, recentWorks, olderWorks } as ConfigType
+export default { menu, skills, mediumArticles, recentWorks, olderWorks } as ConfigType;

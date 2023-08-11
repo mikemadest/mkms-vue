@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useIntl } from 'vue-intl'
-const { locale } = useIntl()
+import { useIntl } from 'vue-intl';
+const { locale } = useIntl();
 </script>
 
 <template>

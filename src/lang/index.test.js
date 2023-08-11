@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import getTranslations from './index';
 
 describe('translation files should be correct', () => {
