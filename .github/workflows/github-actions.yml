@@ -26,4 +26,13 @@ jobs:
 
       - name: Run unit tests
         run: npm run test:unit
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.cluster023.hosting.ovh.net
+          username: mkmsfrnxey
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /home/mkmsfrnxey/www/mkms2/vueversion
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
