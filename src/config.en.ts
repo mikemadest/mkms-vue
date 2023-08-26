@@ -80,7 +80,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'ExpoJS',
     description:
       'ExpoJS is a docs generator and UI. It shows exported content like constants and functions and present packages in a searchable interface.',
-    tags: '#React #ES6 #Concourse #NodeJS #MaterialUI',
+    tags: '#React #JavaScript #Concourse #NodeJS #MaterialUI',
     imageAlt: 'screenshot of the ExpoJS dashboard, showing package cards, navigation and search',
     points:
       'Use Babel parser to analyse JS content|take 7 seconds to scans more than 150 packages|Build documentation|Link to github sources and commits|Suggestions for Package improvements|Hackathon project',
@@ -91,7 +91,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'Housing configurator',
     description:
       'Shop for floor covering, cupboard choice, bathroom decoration and other options for your housing and get a real time preview of your choices.',
-    tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager',
+    tags: '#PHP #ZendFramework2 #ThreeJS #JavaScript #ProjectManager',
     points:
       'Proposed and implemented php code architecture, model, coding|Created 360° viewer and ThreeJS/WebGL components for real time rendering|Recognized efficiency, quality control and management of the team|Managed massive gain in media processing with automation scripts|Created a how-to manual, handled junior training',
     image: workConfiguratorImage,
@@ -101,8 +101,8 @@ const recentWorks: Array<ArticleType> = [
   {
     title: 'Player 3d',
     description:
-      'Javascript viewer mixing real time and pre-rendered scene. Mission was to improve loading time and performances.',
-    tags: '#WebGL #ThreeJS #Javascript',
+      'JavaScript viewer mixing real time and pre-rendered scene. Mission was to improve loading time and performances.',
+    tags: '#WebGL #ThreeJS #JavaScript',
     points:
       '80% faster display and ready for interaction|More responsive control and reworked inertia simulation|Improved code readability, refactored into 4 smaller single purpose classes|Gave autonomy to the teams using it with extensive API documentation, examples and test cases',
     image: workPlayerImage,
@@ -115,7 +115,7 @@ const olderWorks: Array<ArticleType> = [
   {
     title: 'Immodesk',
     description: 'A real estate ERP with CRM module, calendar tool, chat and highly customizable.',
-    tags: '#PHP #Mysql #ZendFramework #Javascript #Bootstrap #ProjectManager',
+    tags: '#PHP #Mysql #ZendFramework #JavaScript #Bootstrap #ProjectManager',
     image: immodeskImage,
     imageAlt: 'image showing immodesk dashboard'
   },
@@ -126,7 +126,7 @@ const olderWorks: Array<ArticleType> = [
     href: 'http://mkms.fr/witch-journey/',
     linkA11y: 'Play the game',
     description: 'Experiment creating a zelda type game using Phaser.',
-    tags: '#Javascript #ES6 #Webpack #Phaser3 #Game',
+    tags: '#JavaScript #Webpack #Phaser3 #Game',
     image: witchImage,
     imageAlt: 'screenshot of the game, showing characters in a retro Zelda style village'
   },
@@ -137,7 +137,7 @@ const olderWorks: Array<ArticleType> = [
     href: 'https://github.com/mikemadest/a-witch-s-journey',
     linkA11y: 'View game Github repository',
     description: 'HTML5 game sources and project management',
-    tags: '#Javascript #ES6 #Git',
+    tags: '#JavaScript #Git #githubActions #VueJS #React',
     image: githubImage,
     imageAlt: 'Screenshot of a github page'
   },
@@ -148,7 +148,7 @@ const olderWorks: Array<ArticleType> = [
     href: 'https://www.codewars.com',
     linkA11y: 'View Codewars website',
     description: 'Improving skills and playing with algorithm.',
-    tags: '#Javascript #ES6',
+    tags: '#JavaScript',
     image: codewarsImage,
     imageAlt:
       'Screenshot of a page of Codewars, a website where people can work on interesting development "puzzles"'
@@ -160,7 +160,7 @@ const olderWorks: Array<ArticleType> = [
     bigImage: blenderImage,
     linkA11y: 'View bigger blender image',
     description: 'Learning 3d modeling and creating real time demo with ThreeJS.',
-    tags: '#Javascript #ThreeJS #Blender',
+    tags: '#JavaScript #ThreeJS #Blender',
     image: blenderImage,
     imageAlt: 'render of the inside of a room, showing stairs, windows, tables, stool, a plant'
   },
@@ -170,9 +170,9 @@ const olderWorks: Array<ArticleType> = [
     bigImage: lilibricoleImage,
     linkA11y: '',
     description:
-      'PHP/Mysql projects, Javascript, Front end and Back end creations. Customer \
+      'PHP/Mysql projects, JavaScript, Front end and Back end creations. Customer \
         space, media validation application for customer relationships, online shops, etc.',
-    tags: '#PHP #Mysql #Javascript #CSS #XHTML',
+    tags: '#PHP #Mysql #JavaScript #CSS #XHTML',
     image: lilibricoleImage,
     imageAlt: 'screenshot of a "do it yourself" training website from my old porfolio of projects'
   }

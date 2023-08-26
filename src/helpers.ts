@@ -5,7 +5,7 @@ interface StringMap {
 export const tagsLinks: StringMap = {
   '#PHP': 'https://www.php.net/',
   '#React': 'https://react.dev/',
-  '#ES6': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  '#JavaScript': 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   '#MaterialUI': 'https://mui.com/',
   '#NodeJS': 'https://nodejs.org/en',
   '#Codecept': 'https://codecept.io/',

@@ -84,9 +84,9 @@ const recentWorks: Array<ArticleType> = [
     title: 'ExpoJS',
     description:
       'ExpoJS est un générateur de documentation et une interface pour chercher et consulter les informations sur les packages.',
-    tags: '#React #ES6 #Concourse #NodeJS #MaterialUI',
+    tags: '#React #JavaScript #Concourse #NodeJS #MaterialUI',
     points:
-      "Sources Javascript lues avec Babel Parser|Analyse de plus de 150 packages en moins de 7 secondes|Affiche une documentation des packages| Liens avec Github vers les sources et commits|Suggestions pour l'amélioration des Packages|Projet Hackathon",
+      "Sources JavaScript lues avec Babel Parser|Analyse de plus de 150 packages en moins de 7 secondes|Affiche une documentation des packages| Liens avec Github vers les sources et commits|Suggestions pour l'amélioration des Packages|Projet Hackathon",
     image: expoJSImage,
     imageAlt:
       "photo d'écran du tableau de bord ExpoJS montrant des cartes pour les packages, la navigation et la recherche"
@@ -95,9 +95,9 @@ const recentWorks: Array<ArticleType> = [
     title: 'Configurateurs immobilier',
     description:
       'Personnalisez votre logement en choisissant les revêtements de sol, placards, domotique et autres options et visualisez en temps réel le rendu de vos choix.',
-    tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager',
+    tags: '#PHP #ZendFramework2 #ThreeJS #JavaScript #ProjectManager',
     points:
-      "Mise en place du modèle, architecture de code et implémentation en PHP|Création d'un lecteur de visite virtuelle en HTML5 et de composants ThreeJS/WebGL pour le rendu temps réel|Création des outils javascript et gestion des échanges avec l'équipe 3d|Efficacité et contrôle qualité reconnus, gestion de l'équipe|Création de scripts pour une automatisation de la production des médias 3d|Documentation du projet et formation des juniors",
+      "Mise en place du modèle, architecture de code et implémentation en PHP|Création d'un lecteur de visite virtuelle en HTML5 et de composants ThreeJS/WebGL pour le rendu temps réel|Création des outils JavaScript et gestion des échanges avec l'équipe 3d|Efficacité et contrôle qualité reconnus, gestion de l'équipe|Création de scripts pour une automatisation de la production des médias 3d|Documentation du projet et formation des juniors",
     image: workConfiguratorImage,
     imageAlt:
       'gif animé montrant une pièce en 360 degrés avec un utilisateur changeant le revêtement de sol en temps réel'
@@ -106,7 +106,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'Player 3d',
     description:
       "Outil de visualisation WebGL mélangeant rendus temps réel et pré-calculé. L'intervention concernait l'amélioration des performances et du temps de chargement.",
-    tags: '#WebGL #ThreeJS #Javascript',
+    tags: '#WebGL #ThreeJS #JavaScript',
     points:
       "Gain de 80% sur la vitesse d'affichage et la disponibilité|Meilleure réactivité globale et réécriture de la simulation d'inertie|Amélioration de la lisibilité du code : séparation en 4 classes à responsabilité unique|Documentation de l'API et exemples",
     image: workPlayerImage,
@@ -120,7 +120,7 @@ const olderWorks: Array<ArticleType> = [
     title: 'Immodesk',
     description:
       'ERP Immobilier incluant une CRM, un agenda, un chat et personalisable selon les besoins du client.',
-    tags: '#PHP #Mysql #ZendFramework #Javascript #Bootstrap #ProjectManager',
+    tags: '#PHP #Mysql #ZendFramework #JavaScript #Bootstrap #ProjectManager',
     image: immodeskImage,
     imageAlt: 'exemple de tableau de bord Immodesk'
   },
@@ -131,7 +131,7 @@ const olderWorks: Array<ArticleType> = [
     href: 'http://mkms.fr/witch-journey/',
     linkA11y: 'Play the game',
     description: "Démo d'un jeux de type RPG",
-    tags: '#Javascript #ES6 #Webpack #Phaser3 #Game',
+    tags: '#JavaScript #Webpack #Phaser3 #Game',
     image: witchImage,
     imageAlt: "photo d'écran du jeu, montrant des personages dans un village de type rétro Zelda"
   },
@@ -142,7 +142,7 @@ const olderWorks: Array<ArticleType> = [
     href: 'https://github.com/mikemadest/a-witch-s-journey',
     linkA11y: 'Voir les sources sur Github',
     description: 'Sources du jeu HTML5 et gestion de projet sur Git',
-    tags: '#Javascript #ES6 #Git',
+    tags: '#JavaScript #GithubActions #React #VueJS #Git',
     image: githubImage,
     imageAlt: "photo d'écran d'une page de Github"
   },
@@ -153,7 +153,7 @@ const olderWorks: Array<ArticleType> = [
     href: 'https://www.codewars.com',
     linkA11y: 'Voir le site Codewars',
     description: 'Auto-formation et recherche de challenge sur des algorithmes.',
-    tags: '#Javascript #ES6',
+    tags: '#JavaScript',
     image: codewarsImage,
     imageAlt:
       "photo décran de Codewars, un site permettant de s'entrainer au développement sur des problèmes de difficultés variables"
@@ -165,7 +165,7 @@ const olderWorks: Array<ArticleType> = [
     bigImage: blenderImage,
     linkA11y: 'View bigger blender image',
     description: 'Auto-formation en modélisation 3d et temps réel via ThreeJS.',
-    tags: '#Javascript #ThreeJS #Blender',
+    tags: '#JavaScript #ThreeJS #Blender',
     image: blenderImage,
     imageAlt:
       "rendu blender de lintérieur d'une pièce montrant des fenêtres, des escaliers, une table basse, plante et tabouret"
@@ -176,10 +176,10 @@ const olderWorks: Array<ArticleType> = [
     bigImage: lilibricoleImage,
     linkA11y: '',
     description:
-      'Développements PHP/Mysql, Javascript, Front et Back. Espace client avec \
+      'Développements PHP/Mysql, JavaScript, Front et Back. Espace client avec \
         validation de perspectives 3d, gestion des retours clients via un système de postits, \
         boutiques en ligne, logiciel de caisse, etc.',
-    tags: '#PHP #Mysql #Javascript #CSS #XHTML',
+    tags: '#PHP #Mysql #JavaScript #CSS #XHTML',
     image: lilibricoleImage,
     imageAlt: "photo d'écran d'un site de cours de bricolage, exemple de mon ancien porfolio"
   }
