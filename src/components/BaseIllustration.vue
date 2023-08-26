@@ -17,6 +17,7 @@ const styles = isSmall ? { backgroundImage: `url(${image})` } : {};
       v-if="href"
       :href="href"
       target="_blank"
+      :title="imageAlt"
     >
       <img
         :src="image"

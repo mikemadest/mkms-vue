@@ -9,6 +9,7 @@
       <a
         href="https://www.linkedin.com/in/mickael-meausoone-webdeveloper/?locale=en_US"
         target="_blank"
+        :title="$formatMessage({ id: 'mkms.footer.linkedin' })"
         ><font-awesome-icon icon="fa-brands fa-linkedin" />
       </a>
     </p>
