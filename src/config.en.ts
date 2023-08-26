@@ -70,7 +70,7 @@ const recentWorks: Array<ArticleType> = [
     href: 'https://www.hmhco.com/',
     imageAlt: 'Image showing HMH website structure',
     linkLabel: 'HMH solutions',
-    tags: '#React #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
+    tags: '#JavaScript #React #Jenkins #NodeJS #MaterialUI #Agile',
     points:
       'Migrated angular 1.x applications to React|Created React applications and components in monorepo|Active code reviewer|Proposed and develop solutions for improving tests stability|Ensured compliance with accessibility requirements (WCAG 2.1 AA)',
     image: hmhcoImage
@@ -91,7 +91,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'Housing configurator',
     description:
       'Shop for floor covering, cupboard choice, bathroom decoration and other options for your housing and get a real time preview of your choices.',
-    tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager #Webservice',
+    tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager',
     points:
       'Proposed and implemented php code architecture, model, coding|Created 360° viewer and ThreeJS/WebGL components for real time rendering|Recognized efficiency, quality control and management of the team|Managed massive gain in media processing with automation scripts|Created a how-to manual, handled junior training',
     image: workConfiguratorImage,
@@ -160,7 +160,7 @@ const olderWorks: Array<ArticleType> = [
     bigImage: blenderImage,
     linkA11y: 'View bigger blender image',
     description: 'Learning 3d modeling and creating real time demo with ThreeJS.',
-    tags: '#Javascript #ThreeJS #Blender #Adaptability',
+    tags: '#Javascript #ThreeJS #Blender',
     image: blenderImage,
     imageAlt: 'render of the inside of a room, showing stairs, windows, tables, stool, a plant'
   },
@@ -170,9 +170,9 @@ const olderWorks: Array<ArticleType> = [
     bigImage: lilibricoleImage,
     linkA11y: '',
     description:
-      'PHP/Mysql projects, Javascript, Front end and Back end creations.</strong> Customer \
+      'PHP/Mysql projects, Javascript, Front end and Back end creations. Customer \
         space, media validation application for customer relationships, online shops, etc.',
-    tags: '#PHP #Mysql #Autonomous #Javascript #CSS #XHTML',
+    tags: '#PHP #Mysql #Javascript #CSS #XHTML',
     image: lilibricoleImage,
     imageAlt: 'screenshot of a "do it yourself" training website from my old porfolio of projects'
   }

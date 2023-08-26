@@ -100,7 +100,7 @@ h4 svg {
   left: -150px;
   font-size: 16px;
   font-weight: 900;
-  margin: 0 14px 0 0;
+  margin: 0 6px 0 0;
   vertical-align: middle;
   color: #ecb231;
 }
@@ -232,7 +232,7 @@ nav li a {
 }
 
 nav .menu-item svg {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .language-selector {
@@ -407,6 +407,7 @@ article h3 {
 }
 
 article .illustration {
+  max-height: 320px;
   overflow: hidden;
 }
 
@@ -429,7 +430,7 @@ article li {
 article li svg {
   font-size: 1.2rem;
   font-weight: 900;
-  margin: 0 0.6rem 0 -2.1rem;
+  margin: 0 0.4rem 0 -2.1rem;
   color: #ecb231;
 }
 

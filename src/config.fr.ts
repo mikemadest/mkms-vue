@@ -73,7 +73,7 @@ const recentWorks: Array<ArticleType> = [
     href: 'https://www.hmhco.com/',
     linkA11y: 'Voir le site HMH',
     linkLabel: 'HMH solutions',
-    tags: '#React #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
+    tags: '#JavaScript #React #Jenkins #NodeJS #MaterialUI #Agile',
     points:
       "Migration d'applications angular 1.x vers React|Auteur de nombreuses applications et composants sur le mono repo|Revue de code|Amélioration de la stabilité des tests unitaires sur le pipeline Jenkins|Respect des règles d'accessibilité des contenus Web WCAG 2.1 AA",
     image: hmhcoImage,
@@ -95,7 +95,7 @@ const recentWorks: Array<ArticleType> = [
     title: 'Configurateurs immobilier',
     description:
       'Personnalisez votre logement en choisissant les revêtements de sol, placards, domotique et autres options et visualisez en temps réel le rendu de vos choix.',
-    tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager #Webservice',
+    tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager',
     points:
       "Mise en place du modèle, architecture de code et implémentation en PHP|Création d'un lecteur de visite virtuelle en HTML5 et de composants ThreeJS/WebGL pour le rendu temps réel|Création des outils javascript et gestion des échanges avec l'équipe 3d|Efficacité et contrôle qualité reconnus, gestion de l'équipe|Création de scripts pour une automatisation de la production des médias 3d|Documentation du projet et formation des juniors",
     image: workConfiguratorImage,
@@ -165,7 +165,7 @@ const olderWorks: Array<ArticleType> = [
     bigImage: blenderImage,
     linkA11y: 'View bigger blender image',
     description: 'Auto-formation en modélisation 3d et temps réel via ThreeJS.',
-    tags: '#Javascript #ThreeJS #Blender #Adaptability',
+    tags: '#Javascript #ThreeJS #Blender',
     image: blenderImage,
     imageAlt:
       "rendu blender de lintérieur d'une pièce montrant des fenêtres, des escaliers, une table basse, plante et tabouret"
@@ -179,7 +179,7 @@ const olderWorks: Array<ArticleType> = [
       'Développements PHP/Mysql, Javascript, Front et Back. Espace client avec \
         validation de perspectives 3d, gestion des retours clients via un système de postits, \
         boutiques en ligne, logiciel de caisse, etc.',
-    tags: '#PHP #Mysql #Autonomous #Javascript #CSS #XHTML',
+    tags: '#PHP #Mysql #Javascript #CSS #XHTML',
     image: lilibricoleImage,
     imageAlt: "photo d'écran d'un site de cours de bricolage, exemple de mon ancien porfolio"
   }

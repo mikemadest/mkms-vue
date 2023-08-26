@@ -1,0 +1,21 @@
+{
+  "here": "all game dialogue and texts",
+  "GAME_TITLE": "A\nWitch's\nJourney",
+  "GAME_START": "Cliquer pour lancer le jeu",
+  "CONTINUE": "Cliquer pour poursuivre...",
+  "GAME_OVER": "Vous avez perdu !",
+  "GAME_OVER_RESTART": "Cliquez pour recommencer",
+  "MY_INFO": "Mickael Meausoone - www.mkms.fr",
+  "STORY_1": "A long time ago,\nin a kingdom far far away...",
+  "STORY_2": "Monsters have started\nappearing from the east,\n people got injured.",
+  "STORY_3": "And now your little brother is missing...\nIt's time to take action !",
+  "QUEST_1": "To go west and cross the bridge,\nyou'll have to defeat the monster.\n\nBring me 6 coins\nand you'll have this magic staff !",
+  "QUEST_STATUS": "Remaining coins : ",
+  "QUEST_SUCCESS1": "You have enough coins !",
+  "QUEST_SUCCESS2": "Go grab the staff !",
+  "QUEST_ENDED": "Well done youngling !\nplease use this with care.",
+  "TUTO_STAFF_MOBILE": "YOU NOW HAVE THE MAGIC STAFF !\nTouch the spell on the bottom left to use it !",
+  "TUTO_STAFF_DESKTOP": "YOU NOW HAVE THE MAGIC STAFF !\nPress [SPACE] to use it",
+  "DEMO_END": "Demo completed !",
+  "DEMO_STORY": "If you leave the village, you'll enter the forest...\nWhat will be there, waiting for you ?"
+}
