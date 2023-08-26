@@ -33,6 +33,6 @@ jobs:
           server: ftp.cluster023.hosting.ovh.net
           username: mkmsfrnxey
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/mkmsfrnxey/www/mkms2/vueversion
+          server-dir: /home/mkmsfrnxey/www/mkms2/vueversion/
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
