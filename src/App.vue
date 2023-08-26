@@ -1,24 +1,39 @@
 <script setup lang="ts">
 import { useIntl } from 'vue-intl';
 import getContent from './config';
-import Footer from './components/Footer.vue';
-import PageHeader from './components/PageHeader.vue';
-import MainBanner from './components/MainBanner.vue';
-import About from './components/About.vue';
-import Section from './components/Section.vue';
+import TheFooter from './components/TheFooter.vue';
+import TheHeader from './components/TheHeader.vue';
+import TheBanner from './components/TheBanner.vue';
+import TheAboutSection from './components/TheAboutSection.vue';
+import PorfolioSection from './components/PorfolioSection.vue';
 
 const { locale } = useIntl();
 const { mediumArticles, recentWorks, olderWorks } = getContent(locale);
 </script>
 
 <template>
-  <PageHeader />
-  <MainBanner />
-  <About />
+  <TheHeader />
+  <TheBanner />
+  <TheAboutSection />
 
-  <Section id="medium-articles" :items="mediumArticles" titleId="mkms.nav.mediumArticles" />
-  <Section id="recent-work" :items="recentWorks" titleId="mkms.nav.recentwork" />
-  <Section id="older-work" :items="olderWorks" titleId="mkms.section.moreProjects" isSmall />
+  <PorfolioSection
+    id="medium-articles"
+    :items="mediumArticles"
+    title-id="mkms.nav.mediumArticles"
+  />
 
-  <Footer />
+  <PorfolioSection
+    id="recent-work"
+    :items="recentWorks"
+    title-id="mkms.nav.recentwork"
+  />
+
+  <PorfolioSection
+    id="older-work"
+    :items="olderWorks"
+    title-id="mkms.section.moreProjects"
+    is-small
+  />
+
+  <TheFooter />
 </template>

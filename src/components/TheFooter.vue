@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer>
+  <footer v-once>
     <p>
       <strong>MkMs</strong> - Mickaël MEAUSOONE -
       {{ $formatMessage({ id: 'mkms.position' }) }}

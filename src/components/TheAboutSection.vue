@@ -30,9 +30,15 @@ function onChange(waypointState: WaypointState) {
       }}
     </p>
     <Waypoint @change="onChange">
-      <aside id="skills" :class="{ scrolled: isScrolled }">
+      <aside
+        id="skills"
+        :class="{ scrolled: isScrolled }"
+      >
         <ul>
-          <li v-for="[skillTitle, skillDescription] in skills" :key="skillTitle">
+          <li
+            v-for="[skillTitle, skillDescription] in skills"
+            :key="skillTitle"
+          >
             <h4>
               <font-awesome-icon icon="fa-solid fa-square" />
               {{ skillTitle }}

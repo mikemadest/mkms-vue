@@ -1,5 +1,8 @@
 <template>
-  <section id="big-banner">
+  <section
+    id="big-banner"
+    v-once
+  >
     <div class="banner-content">
       <div>
         <h1>
