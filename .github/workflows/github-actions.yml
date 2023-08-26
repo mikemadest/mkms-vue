@@ -1,4 +1,4 @@
-name: Github Actions
+name: MKMS build and deploy
 on: [push]
 jobs:
   Mkms-github-actions:
