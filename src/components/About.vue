@@ -7,7 +7,6 @@ import getContents from '../config';
 const { locale } = useIntl();
 const { skills } = getContents(locale);
 const isScrolled = ref(false);
-const asideClassName = ref('');
 
 function onChange(waypointState: WaypointState) {
   if (waypointState.going === 'IN') {
@@ -15,7 +14,6 @@ function onChange(waypointState: WaypointState) {
   } else {
     isScrolled.value = false;
   }
-  asideClassName.value = isScrolled.value ? 'scrolled' : '';
 }
 </script>
 
@@ -32,9 +30,9 @@ function onChange(waypointState: WaypointState) {
       }}
     </p>
     <Waypoint @change="onChange">
-      <aside id="skills" :class="asideClassName">
+      <aside id="skills" :class="{ scrolled: isScrolled }">
         <ul>
-          <li v-for="[skillTitle, skillDescription] in skills">
+          <li v-for="[skillTitle, skillDescription] in skills" :key="skillTitle">
             <h4>
               <font-awesome-icon icon="fa-solid fa-square" />
               {{ skillTitle }}

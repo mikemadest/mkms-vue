@@ -9,11 +9,9 @@ const { menu } = getContents(locale);
 
 // class name reactive otherwise it's not updating
 const isScrolled = ref(false);
-const headerClassName = ref('notscrolled');
 
 const onScroll = () => {
   isScrolled.value = window.scrollY > 40;
-  headerClassName.value = isScrolled.value ? 'scrolled' : 'notscrolled';
 };
 
 onMounted(() => {
@@ -26,12 +24,12 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <header :class="headerClassName">
+  <header :class="{ scrolled: isScrolled }">
     <a href="#" class="basename"> <strong>MkMs</strong> - Mickaël MEAUSOONE </a>
 
     <nav>
       <ul>
-        <li v-for="item in menu" class="menu-item">
+        <li v-for="item in menu" class="menu-item" :key="item.link">
           <a href="{{item.link}}">
             <font-awesome-icon :icon="['fa-solid', item.icon]" />
             {{ item.label }}</a

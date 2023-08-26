@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import Article from './Article.vue';
+import type { ArticleType } from '../AllTypes';
 
-const { isSmall } = defineProps(['items', 'titleId', 'id', 'isSmall']);
+const { isSmall, titleId } = defineProps({
+  items: Array<ArticleType>,
+  titleId: String,
+  id: String,
+  isSmall: Boolean
+});
 const itemClassName = isSmall ? 'small-row' : 'normal-row';
 </script>
 

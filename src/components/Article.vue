@@ -3,34 +3,32 @@ import { ref } from 'vue';
 import { Waypoint, type WaypointState } from 'vue-waypoint';
 import tagsLinks from '../helpers';
 
-const { points, isSmall, image, tags } = defineProps([
-  'title',
-  'imageAlt',
-  'image',
-  'href',
-  'description',
-  'tags',
-  'points',
-  'buttonLabel',
-  'isSmall'
-]);
+const { points, isSmall, image, tags } = defineProps({
+  title: String,
+  imageAlt: String,
+  image: String,
+  href: String,
+  description: String,
+  tags: String,
+  points: String,
+  buttonLabel: String,
+  isSmall: Boolean
+});
 
 // seems necessary to make the class name reactive, otherwise it's not updating
 const isScrolled = ref(false);
-const asideClassName = ref('');
 
 function onChange(waypointState: WaypointState) {
   isScrolled.value = waypointState.going === 'IN';
-  asideClassName.value = isScrolled.value ? 'scrolled' : '';
 }
 
 const styles = isSmall ? { backgroundImage: `url(${image})` } : {};
 const pointsList = points?.split('|') || null;
-const tagList = tags.split(' ');
+const tagList = tags?.split(' ');
 </script>
 
 <template>
-  <article :class="asideClassName">
+  <article :class="{ scrolled: isScrolled }">
     <div class="illustration" :style="styles">
       <a v-if="href" :href="href" target="_blank">
         <img :src="image" :alt="imageAlt" />
@@ -50,7 +48,7 @@ const tagList = tags.split(' ');
         {{ description }}
         <br />
         <span class="highlight-features">
-          <template v-for="tag in tagList">
+          <template v-for="tag in tagList" :key="tag">
             <a v-if="tagsLinks[tag]" :href="tagsLinks[tag]">{{ tag }}</a>
             <span v-else>{{ tag }}</span>
           </template>
